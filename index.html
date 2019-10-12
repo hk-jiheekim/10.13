@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rocky Horror Picture show</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+		@font-face { font-family: 'OTEnjoystoriesBA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff'); font-weight: normal; font-style: normal; }
+		
+		@font-face { font-family: 'WONDotum'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/WONDotum.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+
+		.wrap {position: relative; margin: auto; height: 1000px; width: 800px;}
+		
+		header .wrap {height: 550px; width: 100%; background: black;}
+		header .wrap{background: url(a2.png); background-size: 500px; 
+			background-attachment: fixed;}
+		
+		.pan{background: black; height: 550px; opacity: 0.9; 
+			transition: all 0.5s}
+		.pan:hover{opacity: 0.5;}
+		
+		footer{background: black;}
+		footer .wrap {height: 200px; background: black; width: 800px; margin:auto; color: white; }
+		footer p{font-weight: lighter; font-size: 13px; left: 300px; position: absolute;}
+
+		
+		img{position: absolute;}
+		h2{font-size: 48px; position: absolute; font-family: 'OTEnjoystoriesBA'; color: red;}
+		p{position: absolute; font-size: 15px; line-height:1.6; word-break: keep-all; 
+			width: 550px; top: 150px; font-family: 'WONDotum';}
+		img{position: absolute;}
+		
+		.s1 h2{font-size: 55px; top: 150px; left: -150px; color: red; font-family: 'Mansalva', cursive;}
+		.s1 p{ left: -100px;}
+		.s1 .wrap {height: 700px; background: black; color: white; background-attachment: fixed; }
+		.s1{background-color: black;}
+
+		
+		.s2 .wrap{background:url(flower.png); background-size: cover; width: 100%; height: 1200px; background-attachment: fixed; }
+		.s2 h2{position: absolute; top: 100px; left: 250px; opacity: 0;}
+		.s2 p{top: 250px; left: 300px; color: white; opacity: 0;}
+		.wrap .s22{position: absolute; color: white; top: 490px; left: 850px;  font-family: 'OTEnjoystoriesBA'; font-size: 25px; opacity: 0.5;}
+
+		.i1{top: 200px; left: 800px; opacity: 0; 
+			transition: all 1s }
+		.i1:hover{opacity: 0.7;}
+
+		.i2{top: 300px; left: -120px; width: 400px; opacity: 0;}
+
+		.s3, .s3 .wrap{background-color: black; background-attachment: fixed;}
+		.s3 h2{top: 150px; left: 250px; opacity: 0;}
+		.s3 p{top: 350px; left: 320px; color: white; opacity: 0;}
+		.wrap .s33 { position: absolute; color: red; left: 130px; top: 305px;font-family: 'OTEnjoystoriesBA'; font-size: 20px; opacity: 0.7;}
+
+	
+		.s4 .wrap{ background: url(./cc.png); background-attachment: fixed; background-size: cover; width: 100%; height: 950px;}
+		.s4 h2{top: 100px; left:calc(50% - 100px); opacity: 0;}
+		.s4 p{color: white; font-weight: lighter; left:calc(50% - 50px); top: 250px; opacity: 0;}
+		.wrap .ss4{color: red; position: absolute; top: 550px; left: 950px; font-family: 'OTEnjoystoriesBA'; font-size: 25px;}
+
+		.s5{background-color: black; height: 900px;}
+		.s5 .wrap{background: black; background-attachment: fixed; color: white; font-weight: lighter;}
+		.s5 h2{top: 100px; left: -50px; opacity: 0;}
+		.s5 p{top: 200px; top: 250px;  opacity: 0;}
+		.i3{ width: 300px;  top: 100px; left:600px; opacity: 0.3; transition: all 1s; }
+		.i3:hover{opacity: 0.7;}
+		.wrap .ss5{position: absolute; top: 400px; color:red; left: 550px; opacity: 0.7;
+			font-family: 'OTEnjoystoriesBA'; font-size: 25px;}
+
+
+		.s6{height: 900px;}
+		.s6 .wrap {background: url(jj.jpg); background-size: cover; background-attachment: fixed; width: 100%; height: 900px;}
+		.s6 h2{left: 400px; top: 150px; opacity: 0;}
+		.s6 p{color: white; left: 400px; font-weight: lighter; top: 300px; 
+			width: 400px; opacity: 0;}
+
+		
+		#sim1{position: absolute; width: 400px; height: 210px; top: 600px; left: 200px;}
+		#sim2{position: absolute; width: 500px; height: 338px; top: 700px; left: 800px;}
+		#sim3{position: absolute; width: 500px; height: 280px; top: 800px; left: 330px;}
+
+		#sim4{position: absolute; width: 400px; height: 300px; top: 510px; left: 20px;}
+		#sim5{position: absolute; width: 450px; height: 290px; top: 510px; left: 460px;}
+ 		#sim6{position: absolute; width: 1200px; height: 900px; left: -200px; }
+
+
+
+		@keyframes bt{
+			from{top: 500px; opacity: 0;}
+			to{top: 100px; opacity: 1;}
+		}
+
+		@keyframes btt{
+			from{top: 500px; opacity: 0;}
+			to{top: 180px; opacity: 1;}
+		}
+
+		@keyframes bbtt{
+			from{top: 500px; opacity: 0;}
+			to{top: 150px; opacity: 1;}
+		}
+
+		@keyframes spt2{
+			from{top: 500px; opacity: 0;}
+			to{top: 380px; opacity: 1;}
+		}
+
+
+		@keyframes spt1{
+			from{top: 500px; opacity: 0;}
+			to{top: 300px; opacity: 1;}
+		}
+
+		@keyframes spi1{
+			from{top: -500px; opacity: 0;}
+			to{top: 250px; opacity: 1;}
+		}
+
+		@keyframes spi2{
+			from{left: -500px; opacity: 0;}
+			to{left: -120px; opacity: 1;}
+		}
+
+		@keyframes si31{
+			from{left: -500px; opacity: 0;}
+			to{left: -100px; opacity: 1;}
+		}
+
+		@keyframes si32{
+			from{left: 1500px; opacity: 0;}
+			to{left: 700px; opacity: 1;}
+		}
+
+		@keyframes si33{
+			from{top: 1500px; opacity: 0;}
+			to{top: 700px; opacity: 1;}
+		}
+
+		@keyframes si63{
+			from{left: -300px; opacity: 0;}
+			to{left:00px; opacity: 0.7;}
+		}
+
+	@keyframes si62{
+			from{left: -300px; opacity: 0;}
+			to{left:200px; opacity: 0.7;}
+		}
+		
+		#sh1{opacity: 0;}
+		#sp1{opacity: 0;}
+
+
+ 		#monitor{position: fixed; background: black; top: 0px; right: 0px; width: 70px; height: 20px; padding: 5px; color: white;}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrap">
+			<div class="pan"></div>
+			<img src="./a1.png" style="width: 600px; left:calc(50% - 300px); top: 150px;">
+		</div>
+	</header>
+
+	<section class="s1">
+		<div class="wrap">
+			<h2 id="sh1">Rocky Horror Picture Show</h2>
+			<p id="sp1">‘브래드’는 약혼녀 ‘자넷’과 둘을 맺어준 은사 스콧박사를 찾아가는 길에 폭우를 만난다. 설상가상으로 자동차 타이어까지 펑크가 나게 되고, 둘은 도움을 청하기 위해 외딴 성의 문을 두드린다. 이 성에는 양성 과학자 ‘프랭크 N 피터 박사’와 기괴한 모습의 꼽추 ‘리프래프’ 등이 살고 있다. ‘브래드와 ‘자넷’은 이들의 파티에 참석해 상상하지 못했던 기상천외한 밤을 보내게 되는데…</p>
+
+		</div>
+	</section>
+
+	<section class="s2">
+			
+		<div class="wrap">
+			<div id="sim3"></div>
+			<div id="sim1"></div>
+			<div id="sim2"></div>
+			
+			<h2 id="sh2">1. 약혼과 동시에 길 잃기</h2>
+			<p id="sp2"> 친구 결혼식에 오니 우리도 결혼해야 할 것 같다. 결혼은 당장 못하니까<br> 우리끼리 약혼을 먼저 하자. 그리고 우리 결혼할 거니까 은사님한테 가서 감사 인사도 드리자. 아니, 근데 비가 진짜 많이 오네. 길도 잃은 것 같다. 아?? 차까지 고장났네? <br>아 다행히 저기 저택이 있다. 우리 저기 가서 도움 좀 청하자. <br><br><strong>아니 이게 뭐야. 여기 저택 사람들이 좀 많이 이상하다??</strong> </p>
+			
+			<img src="./aa.png" class="i1" id="img1">
+			
+			<p class="s22">click here ↑</p>
+			
+			
+									
+		</div>
+	</section>
+
+	<section class="s3">
+		<div class="wrap">
+			
+			<h2 id="sh3">2. 만나서 반가워. 일단 춤부터 추자</h2>
+			<p id="sp3"> 어머 반가워. 근데 우리 하던 게 있으니까 일단 하던 거 좀 먼저 할게. 아 너무 신난다. 최고야!! 너네도 같이 춤 출래? 같이 추면 더 즐거울 거야. 우리 대장님 멋있지?<br>우리 대장님이 너희에게 엄청난 걸 보여주신다네. 너희 타이밍 정말 잘 맞혀 왔다.<br> 이건 엄청난 기회야.
+			영광인 줄 알아. 정말로 어디 가서도 못 보는 거야. 일단 너희 비에 너무 많이 젖었으니까 옷부터 벗자. <strong>그리고 대장님이 있는 곳으로 가자.<strong>   </p>
+			
+			<img id="img2" class="i2" src="./bb.png">
+			<p class="s33">↓ BOSS</p>
+			<img src="./d3.gif" id="si31"  style="top: 700px; left: -100px; opacity: 0;">
+			<img src="./a.gif" id="si33"  style="top: 700px; left: 250px; width: 400px; opacity: 0;">
+			<img src="./d2.gif" id="si32"  style="top: 700px;  left: 700px; width: 300px; opacity: 0;">
+
+
+		</div>
+	</section>
+
+	<section class="s4">
+		<div class="wrap">
+			<h2 id="sh4">3. 난 여기 대장이고, 얘는 내가 만든 사람이야</h2>
+			<p id="sp4">아 왔니? 내가 특별히 너희에게 엄청난 걸 보여줄게. 안보고 싶다고? 어쩌라는거야. <br>내가 보여줄거라고. 짜잔! 내가 만든 발명품인 사람이야. 너무 멋지지 않니? 내가 얼마나 많이 노력한지 몰라. 나의 걸작품이야. 정말 신기하지? 지능은.. 좀 모자라지만 그거야..뭐..가르치면 괜찮겠지. 아 이름은 뭐로 하지? 
+			<strong>음..그래 록키, 록키가 좋겠다.</strong></p>
+			<p class="ss4"> I'm Rocky! →</p>
+			<img src="./g1.gif"  style="width: 300px; top: 200px; left: 150px;" >
+			<img src="./g2.gif"  style="width: 300px; top: 400px; left: 150px;">
+			<img src="./e.jpg"   style="width: 300px; top: 600px; left: 150px;">
+		
+			
+		</div>
+	</section>
+	
+	<section class="s5">
+		<div class="wrap">
+			<div id="sim4"></div>
+			<div id="sim5"></div>
+			<div id="sim6"></div>
+			<h2 id="sh5">4. 내가 얼마나 잘 해줬는데, 이러기야?</h2>
+			<p id="sp5">너희 지금 뭐하는거야? 내가 이러라고 발명품을 보여줬니? 아 정말 마음에 안드네. 여기 박사라는 사람은 또 뭐고? 여기는 어떻게 알고 들어온거야. 정말 화가 나네. 컬럼비아 넌 잘하다가 갑자기 왜이러는 거야. 너희 모두에게 평생 잊지 못할 기억을 만들어 주겠어!  </p>
+			<img src="./ii.png" class="i3" id="img3"  >
+			<p class="ss5"> Click Me →</p>
+			
+
+		</div>
+	</section>
+
+	<section class="s6">
+		<div class="wrap">
+			<img src="./e4.gif" id="si63" style="opacity: 0;" >
+			<h2 id="sh6">5. 이젠 더 이상 못 참아</h2>
+			<p id="sp6">내가 이 집 집사나 오른팔 정도라고 생각했겠지만 아니야. 난 능력있는 존재라고. 이제 대장의 행동을 더 이상 못 봐주겠다. 우리는 임무를 수행해야 한다고. 넌 이제 끝이야! 알겠어? 너가 그렇게 감정에 호소해도 봐주지 않을 거야. 우리는 펜실베니아로 돌아간다!!
+			</p>
+			
+			<img src="./e5.gif" id="si61" style="top: 350px;opacity: 0;">
+			<img src="./e6.gif" id="si62" style="top: 550px; width: 440px; left: 200px; opacity: 0;">
+		</div>
+	</section>
+	<footer>
+		<div class="wrap">
+			<p>2019.10.13.과제/ 한경대학교 디자인과/ 김지희</p>
+		</div>
+	</footer>
+
+
+
+	<div id="monitor"></div>
+
+	<script type="text/javascript">
+
+		window.onscroll = function(){
+	var t = document.documentElement.scrollTop + document.body.scrollTop;
+	monitor.innerHTML = t.toFixed(1);
+		
+		if ( t > 150) {sh1.style.animation = "bt 2s  forwards";}
+		else{sh1.style.animation = "";}
+		if ( t > 350) {sp1.style.animation = "spt1 2s  forwards";}
+		else{sp1.style.animation = "";}
+
+		if ( t > 1100) {sh2.style.animation = "bt 2s  forwards";}
+		else{sh2.style.animation = "";}
+		if ( t > 1150) {sp2.style.animation = "spt1 2s  forwards";}
+		else{sp2.style.animation = "";}
+		if ( t > 1300) {img1.style.animation = "spi1 2s  forwards";}
+		else{img1.style.animation = "";}
+
+
+		if ( t > 2300) {sh3.style.animation = "btt 2s  forwards";}
+		else{sh3.style.animation = "";}
+		if ( t > 2350) {sp3.style.animation = "spt2 2s  forwards";}
+		else{sp3.style.animation = "";}
+		if ( t > 2350) {img2.style.animation = "spi2 2s  forwards";}
+		else{img2.style.animation = "";}
+		
+		if ( t > 2600) {si31.style.animation = "si31 1.5s  forwards";}
+		else{shi31.style.animation = "";}
+		if ( t > 2600) {si32.style.animation = "si32 1.5s  forwards";}
+		else{shi32.style.animation = "";}
+		if ( t > 2600) {si33.style.animation = "si33 1.5s  forwards";}
+		else{si33.style.animation = "";}
+
+		if ( t > 3300) {sh4.style.animation = "bt 2s  forwards";}
+		else{sh4.style.animation = "";}
+		if ( t > 3400) {sp4.style.animation = "spt1 2s  forwards";}
+		else{sp4.style.animation = "";}
+
+		
+		if ( t > 4100) {sh5.style.animation = "bbtt 2s  forwards";}
+		else{sh5.style.animation = "";}
+		if ( t > 4200) {sp5.style.animation = "spt1 2s  forwards";}
+		else{sp5.style.animation = "";}
+
+		if ( t > 5000) {sh6.style.animation = "bbtt 2s  forwards";}
+		else{sh6.style.animation = "";}
+		if ( t > 5100) {sp6.style.animation = "spt1 2s  forwards";}
+		else{sp6.style.animation = "";}
+
+		if ( t > 5150) {si63.style.animation = "si63 2s  forwards";}
+		else{si63.style.animation = "";}
+		if ( t > 5200) {si61.style.animation = "si63 2s  forwards";}
+		else{si61.style.animation = "";}
+		if ( t > 5250) {si62.style.animation = "si62 2s  forwards";}
+		else{si62.style.animation = "";}
+
+
+}
+		
+		
+
+		var img1state ="off";
+		img1.onclick=function(){
+		if(img1state =="off"){
+			img1.style.opacity=0.3;
+			sim1.style.background = "url('h4.gif')";
+			sim2.style.background = "url('h3.gif')";
+			sim3.style.background = "url('h2.gif')";
+			img1state = "on";}
+		
+		else{img1.style.opacity ="1";
+			sim1.style.background = "";
+			sim2.style.background = "";
+			sim3.style.background = "";
+			img1state = "off";}}
+
+		var img3state ="off";
+		img3.onclick=function(){
+		if(img3state =="off"){
+			img3.style.opacity=0.3;
+			sim4.style.background = "url('i.gif')";
+			sim5.style.background = "url('i2.gif')";
+			sim6.style.background = "url('i3.gif')"
+			img3state = "on";}
+		
+		else{img3.style.opacity ="1";
+			sim4.style.background = "";
+			sim5.style.background = "";
+			sim6.style.background = "";
+			img3state = "off";}}
+
+		
+
+		
+	
+	</script>
+
+</body>
+</html>
