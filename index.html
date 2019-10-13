@@ -202,6 +202,7 @@
 			
 			<img id="img2" class="i2" src="./bb.png">
 			<p class="s33">↓ BOSS</p>
+			
 			<img src="./d3.gif" id="si31"  style="top: 700px; left: -100px; opacity: 0;">
 			<img src="./a.gif" id="si33"  style="top: 700px; left: 250px; width: 400px; opacity: 0;">
 			<img src="./d2.gif" id="si32"  style="top: 700px;  left: 700px; width: 300px; opacity: 0;">
@@ -249,6 +250,8 @@
 			<img src="./e6.gif" id="si62" style="top: 550px; width: 440px; left: 200px; opacity: 0;">
 		</div>
 	</section>
+	<audio id="mysound"> <source src="a.mp3" type="audio/mp3"></audio>
+	
 	<footer>
 		<div class="wrap">
 			<p>2019.10.13.과제/ 한경대학교 디자인과/ 김지희</p>
@@ -261,7 +264,7 @@
 
 	<script type="text/javascript">
 
-		window.onscroll = function(){
+	window.onscroll = function(){
 	var t = document.documentElement.scrollTop + document.body.scrollTop;
 	monitor.innerHTML = t.toFixed(1);
 		
@@ -286,9 +289,9 @@
 		else{img2.style.animation = "";}
 		
 		if ( t > 2600) {si31.style.animation = "si31 1.5s  forwards";}
-		else{shi31.style.animation = "";}
+		else{si31.style.animation = "";}
 		if ( t > 2600) {si32.style.animation = "si32 1.5s  forwards";}
-		else{shi32.style.animation = "";}
+		else{si32.style.animation = "";}
 		if ( t > 2600) {si33.style.animation = "si33 1.5s  forwards";}
 		else{si33.style.animation = "";}
 
@@ -313,10 +316,7 @@
 		if ( t > 5200) {si61.style.animation = "si63 2s  forwards";}
 		else{si61.style.animation = "";}
 		if ( t > 5250) {si62.style.animation = "si62 2s  forwards";}
-		else{si62.style.animation = "";}
-
-
-}
+		else{si62.style.animation = "";}}
 		
 		
 
